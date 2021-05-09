@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		671DF972264801CF00D48712 /* dictionary.json in Resources */ = {isa = PBXBuildFile; fileRef = 671DF971264801CF00D48712 /* dictionary.json */; };
 		678C790626456B5E0064352A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678C790526456B5E0064352A /* AppDelegate.swift */; };
 		678C790826456B5E0064352A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678C790726456B5E0064352A /* SceneDelegate.swift */; };
 		678C790A26456B5E0064352A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678C790926456B5E0064352A /* ViewController.swift */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		671DF971264801CF00D48712 /* dictionary.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dictionary.json; sourceTree = "<group>"; };
 		678C790226456B5E0064352A /* ioslabels.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ioslabels.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		678C790526456B5E0064352A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		678C790726456B5E0064352A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 		678C793A2645778C0064352A /* lh */ = {
 			isa = PBXGroup;
 			children = (
+				671DF971264801CF00D48712 /* dictionary.json */,
 				678C793B264577A00064352A /* lh.swift */,
 				678C7943264577E80064352A /* Arguments.swift */,
 				678C7952264578460064352A /* Dictionary.swift */,
@@ -270,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				678C791226456B620064352A /* LaunchScreen.storyboard in Resources */,
+				671DF972264801CF00D48712 /* dictionary.json in Resources */,
 				678C790F26456B620064352A /* Assets.xcassets in Resources */,
 				678C790D26456B5E0064352A /* Main.storyboard in Resources */,
 			);

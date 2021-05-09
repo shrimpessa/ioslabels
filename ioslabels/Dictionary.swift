@@ -12,12 +12,16 @@ public class Dictionary: DictionaryProtocol {
     let path: String
     
     init() {
-        self.path = ""
+        self.path = Bundle.main.path(forResource: "dictionary", ofType: "json") ?? ""
     }
     
     public func getDictionary() -> [String: [String: String]] {
         var dictionary: [String: [String: String]] = [:]
-        dictionary = ["hello": ["en": "Hello", "ru": "Привет"], "day": ["en": "Day", "ru": "День", "pt": "Dia"], "terms": ["en": "Terms", "pt": "Termos"]]
+        if let jsonDictionaryFile = FileManager.default.contents(atPath: path) {
+            dictionary = (try? JSONDecoder().decode([String: [String: String]].self, from: jsonDictionaryFile)) ?? [:]
+        } else {
+            print(ValidationResult.failedToRead)
+        }
         return dictionary
     }
 
